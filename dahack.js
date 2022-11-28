@@ -1,20 +1,19 @@
+console.info("DAHack activated.")
 function DAHelp() {
-  console.log("----------------------------------------------------")
-  console.log("DAAnswer() : Show current answer value")
-  console.log("DACAnswer() : Change current answer value")
-  console.log("Made by JuniorSchueller")
-  console.log("----------------------------------------------------")
+    console.log("----------------------------------------------------\nDAAnswer() : Show current answer value\nDACAnswer() : Change current answer value\nMade by JuniorSchueller\n----------------------------------------------------")
 }
 function DAAnswer() {
-    console.log("----------------------------------------------------")
-    console.log("Answer: " + answer)
-    console.log("Made by JuniorSchueller")
-    console.log("----------------------------------------------------")
+    if(!answer) {
+        console.log("----------------------------------------------------\nYou are not in Dump Adivinha website.\n----------------------------------------------------")
+    } else {
+        console.log("----------------------------------------------------\nAnswer: " + answer + "\nMade by JuniorSchueller\n----------------------------------------------------")
+    }
 }
 function DACAnswer(newvalue) {
-    answer = newvalue
-    console.log("----------------------------------------------------")
-    console.log("Answer set to: " + newvalue)
-    console.log("Made by JuniorSchueller")
-    console.log("----------------------------------------------------")
+    if(!newvalue) {
+        console.log("----------------------------------------------------\nPlease, enter new a value (e.g: DACAnswer(123)).\nMade by JuniorSchueller\n----------------------------------------------------")
+    } else {
+        answer = newvalue
+        console.log("----------------------------------------------------\nAnswer set to: " + newvalue + "\nMade by JuniorSchueller\n----------------------------------------------------")
+    }
 }
