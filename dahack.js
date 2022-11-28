@@ -11,7 +11,7 @@ function DAAnswer() {
     console.log("Made by JuniorSchueller")
     console.log("----------------------------------------------------")
 }
-function DAAnswer(newvalue) {
+function DACAnswer(newvalue) {
     answer = newvalue
     console.log("----------------------------------------------------")
     console.log("Answer set to: " + newvalue)
